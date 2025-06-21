@@ -145,6 +145,6 @@ app.delete("/remove/ngo/:id" ,  async (req, res)=> {
 })
 
 
-app.listen(300 ,() =>{
-    console.log("server wuu shaqeynaaaa ")
-})
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server is running on port", process.env.PORT || 5000);
+});
