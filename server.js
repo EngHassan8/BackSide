@@ -17,7 +17,7 @@ const bmsModel = require ("./modal/bmsModel")
 
 
 // isku xir dstsbase ka in mongoose ka 
-mongoose.connect("mongodb://localhost:27017/Herdo").then(()=>{
+mongoose.connect("mongodb+srv://enghassan:ohUqRvKQM3mOvl2q@cluster0.wuvavtl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("databse ka waa la xareyyeey ")
 }).catch((err)=>{
     console.log(err)
