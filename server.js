@@ -17,7 +17,7 @@ const bmsModel = require ("./modal/bmsModel")
 
 
 // isku xir dstsbase ka in mongoose ka 
-mongoose.connect("mongodb+srv://enghassan:ohUqRvKQM3mOvl2q@cluster0.wuvavtl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
+mongoose.connect("mongodb+srv://enghassan:jux8sVM0VRAY7lU2@cluster0.wuvavtl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("databse ka waa la xareyyeey ")
 }).catch((err)=>{
     console.log(err)
@@ -96,7 +96,7 @@ app.post("/diwaanGalin", async (req, res) => {
 });
 
  
-/////////////////login ///////////
+/////////////////login//////
 
 app.post("/Login", async (req, res) => {
   try {
@@ -145,6 +145,6 @@ app.delete("/remove/ngo/:id" ,  async (req, res)=> {
 })
 
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log("Server is running on port", process.env.PORT || 5000);
-});
+app.listen(300 ,() =>{
+    console.log("server wuu shaqeynaaaa ")
+})
